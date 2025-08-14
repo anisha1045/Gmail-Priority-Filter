@@ -14,43 +14,17 @@ Each user gets a custom model based on their email behavior and labeling.
 
 ## How It Works
 
-The extension predicts which unread emails are priority for each user individually. It uses features such as:
-	•	Sender
-	•	Email content
-	•	Time of day the email was sent
-	•	Any other relevant metadata
+The extension predicts which unread emails are priority for each user individually. It uses features such as sender, email content, time of day sent, etc.
 
- ┌──────────────────────┐
-│   Submit 500 Emails  │
-└─────────┬────────────┘
-          │
-          ▼
-┌──────────────────────┐
-│  Label Read Emails   │
-│  as Priority/Normal  │
-└─────────┬────────────┘
-          │
-          ▼
-┌─────────────────────────────┐
-│ Train MNB Model             │
-│ (CountVectorizer + Features)│
-└─────────┬──────────────────┘
-          │
-          ▼
-┌──────────────────────┐
-│  Predict Priority    │
-│  Unread Emails       │
-└─────────┬────────────┘
-          │
-          ▼
-┌──────────────────────┐
-│ "Priority" Label in  │
-│ Gmail Inbox          │
-└──────────────────────┘
+Workflow:
+	1.	Submit 500 emails – creates the vocabulary for your personalized model.
+	2.	Label read emails – mark which emails are priority.
+	3.	Train MNB model – uses CountVectorizer and the selected features.
+	4.	Predict priority emails – all unread emails marked as priority appear in a new Gmail label called “Priority”.
 
 ## Notes
 -	This extension is not in the Chrome Web Store due to the high cost of a full security review.
-- To use the extension, email me at [email@gmail.com](mailto:email@gmail.com) so the extension has access to your Gmail account.
+- To use the extension, email me at [anishabhaskartorres@gmail.com](mailto:anishabhaskartorres@gmail.com) so the extension has access to your Gmail account.
 
 ## Getting Started (Local Setup)
 
