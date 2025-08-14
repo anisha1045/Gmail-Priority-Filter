@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Priority Preferences</title>
+  <link rel="stylesheet" href="pre-train.css">
+  <style>
+    #thank-you-message {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-size: 20px;
+        font-weight: 300;
+        text-align: center;
+        padding: 0 20px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        color: #444444;
+    }
+    #submit-emails {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        cursor: pointer;
+        border: none;
+        border-radius: 8px;
+        background-color: #4CAF50;
+        color: white;
+    }
+    #submit-emails:hover {
+        opacity: 0.9;
+    }
+    body {
+        margin: 0;
+    }             
+</style>
+</head>
+<body>
+  <div class="input-container">
+    <div id="thank-you-message">
+      <p>To begin, please submit your 500 most recent emails for vocabulary analysis.</p>
+      <button id="submit-emails">Submit</button>
+  </div>
+  </div>
+  <script src="pre-train.js" defer></script>
+</body>
+</html>

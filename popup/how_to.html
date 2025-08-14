@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How To Use</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #ffffff;
+      color: #202124;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      font-size: 28px;
+      font-weight: 300;
+      border-bottom: 1px solid #ddd;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      font-weight: 300;
+    }
+
+    ul {
+      padding-left: 20px;
+      font-weight: 300;
+    }
+    
+    li {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 300;
+  }
+
+    .sign-in h2 {
+      color: #1a73e8; /* Blue */
+    }
+
+    .pre-train h2 {
+      color: #fbbc04; /* Yellow */
+    }
+
+    .train h2 {
+      color: #34a853; /* Green */
+    }
+
+    .erase h2 {
+      color: #ea4335; /* Red */
+    }
+
+    .sign-in ul li::marker {
+      color: #1a73e8; /* Blue */
+    }
+
+    .pre-train ul li::marker {
+      color: #fbbc04; /* Yellow for pre-train */
+    }
+
+    .train ul li::marker {
+      color: #34a853; /* Green for train */
+    }
+
+    .erase ul li::marker {
+      color: #ea4335; /* Red for erase */
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #888;
+      border-top: 1px solid #eee;
+    }
+
+    a {
+      color: #1a73e8; /* Google Blue */
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>How to Use the Gmail Filter Extension</header>
+
+  <section class="sign-in">
+    <h2>Sign In</h2>
+    <p>
+      To begin, sign in and grant us permission to access your emails. This allows us to personalize your experience.
+    </p>
+  </section>
+
+  <section class="pre-train">
+    <h2>Pre-Train</h2>
+    <p>
+      Before we begin, you’ll need to complete a one-time setup:
+    </p>
+    <ul>
+      <li><strong>Tell us your preferences</strong>: Submit a short description of the types of emails you’d like to prioritize.
+        For example: “Emails about upcoming deadlines for bills, rent, and utilities.”</li>
+      <li><strong>Submit your recent emails</strong>: We’ll request your 500 most recent emails to build your personalized vocabulary. Once processed, only the vocab is saved, not your emails.</li>
+    </ul>
+    <p>
+      After this one-time setup, you’ll use Train to improve your model over time.
+    </p>
+  </section>
+
+  <section class="train">
+    <h2>Train</h2>
+    <p>
+      Use this regularly to refine your filter:
+    </p>
+    <ul>
+      <li>You’ll be redirected to your read emails.</li>
+      <li>A popup will ask how many emails you'd like to label.</li>
+      <li>Once confirmed, small circular buttons will appear next to each email—use these to mark which ones are a priority.</li>
+      <li>Click <strong>Submit</strong> when you're done labeling.</li>
+    </ul>
+    <p>
+      During this process:
+    </p>
+    <ul>
+      <li>A Gmail label called <strong>“Priority”</strong> will be created.</li>
+      <li>Once training is over, you’ll be redirected to that label to view all emails your model marked as important.</li>
+      <li>Emails used for training will be deleted. Only the trained model is stored.</li>
+    </ul>
+    <p>
+      You can return to Training Mode anytime to keep improving your model as your email habits change.
+    </p>
+  </section>
+
+  <section class="erase">
+    <h2>Erase</h2>
+    <p>
+      Want to start fresh? Click <strong>Erase</strong> to permanently delete all your data from our servers. Use this if your email habits or preferences have changed significantly. 
+    </p>
+  </section>
+
+  <footer>
+    Contact us: <a href="mailto:support@example.com">support@example.com</a> <br>
+    Built with ♥ using Google Fonts and inspired by Google’s design language.
+  </footer>
+
+</body>
+</html>

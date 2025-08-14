@@ -1,0 +1,36 @@
+{
+  "name": "email-priority-filter",
+  "version": "1.0.0",
+  "description": "Identifies priority emails",
+  "main": "background.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anisha1045/Email-Priority-Filter.git#main"
+  },
+  "author": "Anisha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anisha1045/Email-Priority-Filter/issues"
+  },
+  "homepage": "https://github.com/anisha1045/Email-Priority-Filter/tree/main#readme",
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.22.0",
+    "axios": "^1.9.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "googleapis": "^144.0.0",
+    "he": "^1.2.0",
+    "html-to-text": "^9.0.5",
+    "mailparser": "^3.7.2",
+    "natural": "^8.0.1",
+    "openai": "^4.77.4",
+    "sqlite3": "^5.1.7",
+    "stopword": "^3.1.4"
+  }
+}

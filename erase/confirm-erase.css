@@ -1,0 +1,70 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffcc00; /* Light warning background */
+    font-family: Arial, sans-serif;
+}
+
+/* Container Styling */
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+}
+
+/* Title Styling */
+h2 {
+    color: red;
+    margin-bottom: 15px;
+}
+
+/* Paragraph Styling */
+p {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 15px
+}
+
+/* Button Group Styling */
+.button-group {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Button Base Styling */
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Danger Button */
+.button.danger {
+    background-color: #dc2626; /* Red */
+    color: white;
+}
+
+.button.danger:hover {
+    background-color: #b91c1c;
+}
+
+/* Cancel Button */
+.button.cancel {
+    background-color: #e5e7eb; /* Gray */
+    color: #374151;
+}
+
+.button.cancel:hover {
+    background-color: #d1d5db;
+}

@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    width: 400px;
+    height: 200px; /* Increased height for better layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between title and buttons */
+    background-color: white;
+  }
+  
+  .title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    padding: 0px 0;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: #444444;
+    text-shadow:
+    0 0 0.5px #444;
+    }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 10px; /* 5px gap between buttons */
+    height: 70%; /* Half of the popup height */
+    padding: 10px 0;
+  }
+  
+  button {
+    flex: 1; /* Ensure all buttons are the same size */
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 10px 0;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    height: 70px;
+  }
+  
+  .yellow-button {
+    margin-left: 10px;
+    background-color: #ffc107;
+  }
+  
+  .green-button {
+    background-color: #28a745;
+  }
+  
+  .red-button {
+    margin-right: 10px;
+    background-color: #dc3545;
+  }
+  
+  .blue-button {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color: #007BFF;
+    width: calc(100% - 20px);
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 10px 0;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+  }
+
+  button:focus {
+    outline: none;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
